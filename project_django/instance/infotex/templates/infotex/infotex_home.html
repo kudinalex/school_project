@@ -1,0 +1,25 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}Информатика{% endblock %}
+
+{% block content %}
+    <div class="features">
+        <h1>Информатика</h1>
+        <h3><p>На странице представлены проекты учеников 11-4 класса по информатике!</p></h3>
+        {% for el in values %}
+            <p> {{el}}</p>
+        {% endfor %}
+        <p><h2><a style = 'text-decoration-color : yellow; color: white' href = 'https://taplink.cc/perlin_sergey'>Перлин Сергей</a></h2></p>
+        <p><h2><a style = 'text-decoration-color : yellow; color: white' href = 'https://taplink.cc/kudin_alexander'>Кудин Александр</a></h2></p>
+        <p><h2><a style = 'text-decoration-color : yellow; color: white' href = 'https://taplink.cc/korneeva_anastasia'>Корнеева Анастасия</a></h2></p>
+        <p><h2><a style = 'text-decoration-color : yellow; color: white' href = 'https://taplink.cc/kolotilov_artem'>Колотилов Артем</a></h2></p>
+        <p><h2><a style = 'text-decoration-color : yellow; color: white' href = 'https://taplink.cc/kotelin_pavel'>Котелин Павел</a></h2></p>
+        <p><h2><a style = 'text-decoration-color : yellow; color: white' href = 'https://taplink.cc/kotelin_petr'>Котелин Петр</a></h2></p>
+        <p><h2><a style = 'text-decoration-color : yellow; color: white' href = 'https://taplink.cc/sak_kirill'>Сак Кирилл</a></h2></p>
+        <p><h2><a style = 'text-decoration-color : yellow; color: white' href = 'https://taplink.cc/migalev_kirill'>Мигалёв Кирилл</a></h2></p>
+        <p><h2><a style = 'text-decoration-color : yellow; color: white' href = 'https://taplink.cc/smorkalov_yaroslav'>Сморкалов Ярослав</a></h2></p>
+        <p><h2><a style = 'text-decoration-color : yellow; color: white' href = 'https://taplink.cc/vishnevskiy_efim'>Вишневский Ефим</a></h2></p>
+        <a href="{% url 'home' %}" <button class="btn btn-warning">На главную</button><a/>
+
+    </div>
+{% endblock %}
